@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paket xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://bar.admin.ch/arelda/v4" xsi:type="paketSIP" schemaVersion="4.0">
+  <paketTyp>SIP</paketTyp>
+  <inhaltsverzeichnis>
+    <ordner>
+      <name>header</name>
+      <originalName>header</originalName>
+      <ordner>
+        <name>xsd</name>
+        <originalName>xsd</originalName>
+        <datei id="_NGrKYYiAEe-qAolT347Y_w">
+          <name>ablieferung.xsd</name>
+          <originalName>ablieferung.xsd</originalName>
+          <pruefalgorithmus>MD5</pruefalgorithmus>
+          <pruefsumme>aa1f7ad13064e1643ac85478296165af</pruefsumme>
+        </datei>
+        <datei id="_NGsYgIiAEe-qAolT347Y_w">
+          <name>archivischeNotiz.xsd</name>
+          <originalName>archivischeNotiz.xsd</originalName>
+          <pruefalgorithmus>MD5</pruefalgorithmus>
+          <pruefsumme>847911efbac472d0ecc6fe1e99873799</pruefsumme>
+        </datei>
+        <datei id="_NGs_kIiAEe-qAolT347Y_w">
+          <name>archivischerVorgang.xsd</name>
+          <originalName>archivischerVorgang.xsd</originalName>
+          <pruefalgorithmus>MD5</pruefalgorithmus>
+          <pruefsumme>4a237563fd2d40be9a9ecbf4c0bf946e</pruefsumme>
+        </datei>
+        <datei id="_NGwC4IiAEe-qAolT347Y_w">
+          <name>arelda.xsd</name>
+          <originalName>arelda.xsd</originalName>
+          <pruefalgorithmus>MD5</pruefalgorithmus>
+          <pruefsumme>f8454632e1ebf97e0aa8d9527ce2641f</pruefsumme>
+        </datei>
+        <datei id="_NGxRAIiAEe-qAolT347Y_w">
+          <name>base.xsd</name>
+          <originalName>base.xsd</originalName>
+          <pruefalgorithmus>MD5</pruefalgorithmus>
+          <pruefsumme>cb30854883c6d5640b0965dae5f34afd</pruefsumme>
+        </datei>
+        <datei id="_NGyfIIiAEe-qAolT347Y_w">
+          <name>datei.xsd</name>
+          <originalName>datei.xsd</originalName>
+          <pruefalgorithmus>MD5</pruefalgorithmus>
+          <pruefsumme>a4276f0c798ce6c497f0a03660ead0d9</pruefsumme>
+        </datei>
+        <datei id="_NGztQIiAEe-qAolT347Y_w">
+          <name>dokument.xsd</name>
+          <originalName>dokument.xsd</originalName>
+          <pruefalgorithmus>MD5</pruefalgorithmus>
+          <pruefsumme>721965e5224766040bf0bcd03978809e</pruefsumme>
+        </datei>
+        <datei id="_NG1icIiAEe-qAolT347Y_w">
+          <name>dossier.xsd</name>
+          <originalName>dossier.xsd</originalName>
+          <pruefalgorithmus>MD5</pruefalgorithmus>
+          <pruefsumme>f3f1141d95e92a291e84cfb30bb30e9a</pruefsumme>
+        </datei>
+        <datei id="_NG2wkIiAEe-qAolT347Y_w">
+          <name>ordner.xsd</name>
+          <originalName>ordner.xsd</originalName>
+          <pruefalgorithmus>MD5</pruefalgorithmus>
+          <pruefsumme>83e0f91d1a232c7bdd7416970844af1c</pruefsumme>
+        </datei>
+        <datei id="_NG3XoIiAEe-qAolT347Y_w">
+          <name>ordnungssystem.xsd</name>
+          <originalName>ordnungssystem.xsd</originalName>
+          <pruefalgorithmus>MD5</pruefalgorithmus>
+          <pruefsumme>4b64247b25362382d6c648ba8ff76ad6</pruefsumme>
+        </datei>
+        <datei id="_NG4lwIiAEe-qAolT347Y_w">
+          <name>ordnungssystemposition.xsd</name>
+          <originalName>ordnungssystemposition.xsd</originalName>
+          <pruefalgorithmus>MD5</pruefalgorithmus>
+          <pruefsumme>1e7f0a9b914c8baf1235740b133ec90e</pruefsumme>
+        </datei>
+        <datei id="_NG5z4IiAEe-qAolT347Y_w">
+          <name>paket.xsd</name>
+          <originalName>paket.xsd</originalName>
+          <pruefalgorithmus>MD5</pruefalgorithmus>
+          <pruefsumme>9920c66b7066f645390e922ba803aadb</pruefsumme>
+        </datei>
+        <datei id="_NG6a8IiAEe-qAolT347Y_w">
+          <name>provenienz.xsd</name>
+          <originalName>provenienz.xsd</originalName>
+          <pruefalgorithmus>MD5</pruefalgorithmus>
+          <pruefsumme>2d6dbc4665cb5169d62549dbbc3f19a7</pruefsumme>
+        </datei>
+        <datei id="_NG7CAIiAEe-qAolT347Y_w">
+          <name>zusatzDaten.xsd</name>
+          <originalName>zusatzDaten.xsd</originalName>
+          <pruefalgorithmus>MD5</pruefalgorithmus>
+          <pruefsumme>a685887b7ad673ea2deac6f96cf3fb4f</pruefsumme>
+        </datei>
+      </ordner>
+    </ordner>
+    <ordner>
+      <name>content</name>
+      <originalName>content</originalName>
+      {% for index, row in data.iterrows() %}
+      <ordner>
+        <name>{{row.dossier_folder}}</name>
+        <originalName>{{row.col3}}</originalName>
+        {% for file_row in row['Files'] %}
+          <datei id="{{file_row.id}}">
+            <name>{{file_row.file_name}}</name>
+            <originalName>{{file_row.file_name}}</originalName>
+            <pruefalgorithmus>MD5</pruefalgorithmus>
+            <pruefsumme>{{file_row.md5_hash}}</pruefsumme>
+          </datei>
+        {% endfor %}
+      </ordner>
+      {% endfor %}
+    </ordner>
+  </inhaltsverzeichnis>
+  <ablieferung xsi:type="ablieferungFilesSIP">
+    <ablieferungstyp>FILES</ablieferungstyp>
+    <ablieferndeStelle>{{data_header.aktenbildnerStelle}}</ablieferndeStelle>
+    <ablieferungsnummer>{{data_header.ablieferungsnummer}}</ablieferungsnummer>
+    <schutzfristenkategorie>{{data_header.schutzfristenkategorie}}</schutzfristenkategorie>
+    <schutzfrist>{{data_header.schutzfrist}}</schutzfrist>
+    <provenienz>
+      <aktenbildnerName>{{data_header.aktenbildnerName}}</aktenbildnerName>
+    </provenienz>
+    <ordnungssystem>
+      <name>{{data_header.ordnungssystemName}}</name>
+      <ordnungssystemposition id="_NG_TcIiAEe-qAolT347Y_w">
+     <nummer>{{data_header.ordnungssystemPositionNummer}}</nummer>
+        <titel>{{data_header.ordnungssystemPositionTitel}}</titel>
+
+
+        {% for index, row in data.iterrows() %}
+
+        <dossier id="{{row.dossier_id}}">
+          <titel>{{row.dossier_folder}}</titel>
+          <entstehungszeitraum>
+            <von>
+              <datum>{{row.entstehungszeitraumvon}}</datum>
+            </von>
+            <bis>
+              <datum>{{row.entstehungszeitraumbis}}</datum>
+            </bis>
+          </entstehungszeitraum>
+
+          <zusatzDaten>
+          {% for item in row['zusatz'] %}
+            <merkmal name="{{ item.name | replace('zusatz_', '') }}">{{item.value}}</merkmal>
+          {% endfor %}
+          </zusatzDaten>
+
+          {% for file_row in row['Files'] %}<dateiRef>{{file_row.id}}</dateiRef>{% endfor %}
+
+        </dossier>
+
+        {% endfor %}
+
+
+
+      </ordnungssystemposition>
+    </ordnungssystem>
+  </ablieferung>
+</paket>
+
+<!--Generated with PackageHandler 2.7.0.484-ffa779cd739d7dd7467ff2fc97ec263c222f7aa8-->

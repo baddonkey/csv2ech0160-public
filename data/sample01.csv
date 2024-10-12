@@ -1,0 +1,14 @@
+#{
+#    "sipname": "SIP_20240101_BAAG_SBCD",
+#    "aktenbildnerStelle": "BAAG",
+#    "ablieferungsnummer": "4711",
+#    "aktenbildnerName": "Stefan Bader",
+#    "ordnungssystemName": "OS BAAG",
+#    "ordnungssystemPositionNummer": "00",
+#    "ordnungssystemPositionTitel": "OS BAAG Root",
+#    "schutzfrist": "30",
+#    "schutzfristenkategorie": "KategorieX"
+#}
+dossier_folder,col2,col3,entstehungszeitraumvon,entstehungszeitraumbis,zusatz_value,zusatz_othervalue,zusatz_somevalue
+dossier_a,01value02,01value03,2024-01-01,2024-12-31,value text zu dossier a,othervalue text zu dossier a,somevalue text zu dossier a
+dossier_b,02value02,02value03,2023-01-01,2023-12-31,value text zu dossier b,othervalue text zu dossier b,somevalue text zu dossier b
